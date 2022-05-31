@@ -8,6 +8,7 @@ import psycopg
 import concurrent.futures
 import threading
 
+
 class elementos_quimicos():
     id = None
     nombre = None
@@ -27,7 +28,7 @@ class elementos_quimicos():
     calor = None
     abundancia = None
     descubierto = None
-    
+
     '''
     COnstructor 
     que nso eprmite almacenar
@@ -35,8 +36,8 @@ class elementos_quimicos():
     necesarios
     
     '''
-    
-    def __init__(self, id, nombre, estado_fisico, peso_atomico, 
+
+    def __init__(self, id, nombre, estado_fisico, peso_atomico,
                  niveles_de_energia, electro_negatividad, punto_de_fision,
                  punto_de_ebullicion, afinidad_electronica, energia_de_ionizacion,
                  radio, dureza, modulo, densidad, conductividad, calor, abundancia,
@@ -45,8 +46,17 @@ class elementos_quimicos():
         self.nombre = nombre
         self.estado_fisico = estado_fisico
         self.peso_atomico = peso_atomico
-        
-    
-
-    
-
+        self.niveles_de_energia = niveles_de_energia
+        self.electro_negatividad = electro_negatividad
+        self.punto_de_fusion = punto_de_fision
+        self.punto_de_ebullicion = punto_de_ebullicion
+        self.afinidad_electronica = afinidad_electronica
+        self.energia_de_ionizacion = energia_de_ionizacion
+        self.radio = radio
+        self.dureza = dureza
+        self.modulo = modulo
+        self.densidad = densidad
+        self.conductividad = conductividad
+        self.calor = calor
+        self.abundancia = abundancia
+        self.descubierto = descubierto
